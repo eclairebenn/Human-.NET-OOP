@@ -10,6 +10,10 @@ namespace Human
             Human myPerson = new Human("Billy");
             Human myPerson2 = new Human("Sally", 4, 4, 2, 85);
             myPerson.Attack(myPerson2);
+            Human sam1 = new Samurai("Sam");
+            Human ninj1 = new Ninja("Nick");
+            Human wiz1 = new Wizard("Willy");
+            (wiz1 as Wizard).Fireball(ninj1);
         }
 
     }
