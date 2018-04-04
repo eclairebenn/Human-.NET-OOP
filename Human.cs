@@ -29,9 +29,15 @@ namespace Human
 
         public void Attack(Human human)
         {
-            int str = this.Strength;
-            human.Health = human.Health - (str*5);
-            System.Console.WriteLine("You have attacked");
+            if(human == null)
+            {
+                System.Console.WriteLine("Failed Attack");
+            }
+            else
+            {
+                human.Health -= (this.Strength*5);
+                System.Console.WriteLine("You have attacked");                
+            }
         }
     }
 
